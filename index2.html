@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Início</title>
+    <link rel="icon" href="img/koilogo.png" type="png" sizes="12x12 16x16 32x32 48x48">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Oswald&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-decoration: none;
+            font-family:  sans-serif;
+        }
+
+        body {
+            background-color: #fcf3e4;
+            color: #190600;
+            font-family:  sans-serif;
+        }
+
+        .navbar,
+        footer {
+            background-color: #d74a05;
+            color: #fcf3e4;
+            padding: 10px;
+        }
+       
+
+        li {
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Alterado para flex-end */
+        }
+
+        .nav-menu li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .nav-menu button {
+            background: #d74a05;
+            border: none;
+            color: #fcf3e4;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            flex: 1;
+            margin: 0 3px ;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            justify-content: flex-end !important;
+        }
+
+        .nav-menu button:hover {
+            background-color: #fcf3e4;
+            color: #d74a05;
+        }
+
+        section {
+            background-color: #d74a05 0.5;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(17, 17, 17, 0.2);
+        }
+
+        .carousel-item img {
+            width: 100%;
+            object-fit: cover;
+            height: 450px;
+            border-radius: 10px;
+        }
+        .carousel-item p{
+            color: #fcf3e4;
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+            
+    text-shadow: 3px 3px 5px #190600;
+
+
+        }
+        #koilogonavbar{
+            width:10% ;
+            height: 45px;
+            float: left;
+            
+        }
+
+        @media(max-width: 1200px) {
+            section {
+                width: 100%;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            color: #fff;
+        }
+
+        .carousel-buttons-below {
+            position: relative;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-postar,
+        .btn-buscar {
+            background-color: #d74a05;
+            color: #fcf3e4;
+            border: none;
+            padding: 30px; /* Ajuste o tamanho dos botões  */
+            cursor: pointer;
+            font-size: 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 0 5px;
+        }
+
+        .btn-postar:hover,
+        .btn-buscar:hover {
+            background-color: white;
+            color: #d74a05;
+        }
+
+        footer {
+            margin-top: 20px;
+            /* Justifique footer */
+        }
+
+        /* Adicionado estilo para remover a decoração de texto dos links no footer */
+        footer a {
+            text-decoration: none;
+            color: #fcf3e4;
+        }
+
+        /* Adicionado estilo para remover o sublinhado específico para a palavra "Sobre Nós" no footer */
+        footer #sobrenostitulo {
+            text-decoration: none;
+            color: #fcf4e4;
+            border-bottom: none;
+        }
+
+        #resumo {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-menu">
+            
+            <img src="img/koilogo.png" id="koilogonavbar">
+            <a href="postagensarea.html"><button type="button" id="btn4" class="btn btn-postar">Serviços</button></a>
+            <a href="#sobrenostitulo"><button type="button" id="btn3" class="btn">Sobre</button></a>
+            <a href="login.html"><button type="button" id="btn2" class="btn">Cadastrar</button></a>
+            <a href="perfil.html"><button type="button" id="btn1" class="btn">Conectado</button></a>
+        </div><br>
+
+        
+    </div><br>
+
+    <section>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/encanador.jpg" class="d-block w-100" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Em nossa comunidade você encontra soluções para suas necessidades! </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pedreiro.jpg" class="d-block w-100" alt="Imagem 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Mão de obra qualificada e avaliada por usuários.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/limpeza.jpg" class="d-block w-100" alt="Imagem 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>No Koi você encontra os melhores profissionais de diversas áreas.</p>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fotografo.jpg" class="d-block w-100" alt="Imagem 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Conectamos oportunidades.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/marceneiro.jpg" class="d-block w-100" alt="Imagem 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Faça parte da nossa comunidade. É rápido, eficiente e seguro.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button><br>
+
+            <!-- Botões abaixo do carrossel -->
+            <div class="carousel-buttons-below">
+                <a href="postar.html"><button type="button" class="btn btn-postar">Postar Serviços</button></a>
+                <a href="postagensarea.html"><button type="button" class="btn btn-buscar">Buscar Serviços</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="finalcinza" id="rodapécinza">
+        <div class="container-fluid" id="containerfinal">
+            <p id="sobrenostitulo"><b>Sobre nós</b></p>
+            <p id="resumo">Somos uma plataforma de serviços online, atuando como intermediadores entre clientes e profissionais, ou seja, conectando quem precisa de algo com quem sabe fazer.
+
+                <p><h5><b>Koi para os clientes:</b></h5></p>
+                
+                Pelo nosso web app você descreve o serviço que precisa os profissionais se candidatam.
+                
+                <p><h5><b>Koi para profissionais:</b></h5></p>
+                
+                <p style="width: 50vw;margin-left: 23vw;">Pela plataforma, você encontra oportunidades na sua área de atuação e escolhe os serviços que desejar se canditar. Ao liberar a oportunidade você negocia com cliente e estabelece seus próprios preços.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

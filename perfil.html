@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Perfil</title>
+    <link rel="icon" href="img/koilogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        section {
+            background-color: #fcf3e4;
+            width: 1200px;
+            margin: 0 auto; /* Centralizar a seção */
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .navbar {
+            background: #d74a05;
+            color: #fcf3e4;
+            font-weight: bold;
+        }
+       
+
+        #koilogonavbar {
+            width: 10%;
+            height: 45px;
+            float: left;
+        }
+
+        #bemvindo, #bemvindo a {
+            text-decoration: none !important;
+            color:#ffffff;
+            font-size: large;
+        }
+
+        #bemvindo:hover {
+            background: #fcf3e4;
+            color: #d74a05!important ;
+            border-radius: 10px;
+        }
+
+        .btn {
+            font-weight: bold;
+            font-size: large;
+        }
+        .btn:hover {
+            background: #fcf3e4;
+            color: #d74a05;
+        }
+
+        #cato {
+            width: 25%;
+            margin-top: 1%;
+            margin-left: 70px;
+            border-radius: 50px;
+            display: inline-block; /* Alterado para inline-block */
+        }
+
+        .comeco {
+            display: flex;
+            align-items: center; /* Alinha verticalmente ao centro */
+        }
+
+        .comeco p {
+            font-size: 200%;
+            color: rgb(25, 6, 0);
+            margin-left: 4%;
+            text-shadow: 100%;
+        }
+
+        .meio {
+            background: #d74a05;
+            color: #fcf3e4;
+        }
+        #dados{
+            margin-top: 1px !important;
+
+        }
+
+        footer {
+            background: #d74a05;
+            color: #fcf3e4;
+            display: flex;
+            justify-content: space-around; /* Distribui os itens igualmente */
+            align-items: center; /* Alinha verticalmente ao centro */
+            text-align: center !important;
+        }
+
+        footer p {
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none !important;
+            
+            margin-right: 20px;
+            
+        }
+
+        @media(max-width: 1200px) {
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="index.html"><li class="btn">Início</li></a>&nbsp; &nbsp;
+            <img src="img/koilogo.png" id="koilogonavbar" style="margin-left: -4vw;">
+            <a href="postagensarea.html"><button type="button" id="btn4" class="btn">Serviços</button></a>
+            <a href="index.html#sobrenostitulo"><button type="button" id="btn3" class="btn"> Sobre</button></a>
+        </div>
+    </div>
+
+    <div class="comeco" style="margin-top: -5%;">
+        <img src="img/andrea.jpg" id="cato">
+        <p style="font-size: 200%; color: rgb(25, 6, 0); text-shadow: 100%;"><b>Andressa Amarão Joaquina</b></p>
+    </div>
+
+    <div class="meio">
+        <p style="font-size: 160%; color: rgb(252, 243, 228);"><b>Classificação!</b></p>
+        <img src="img/estrela.png" class="avaliacaoaoestrela">
+        <img src="img/estrela.png" class="avaliacaoaoestrela">
+        <img src="img/estrela.png" class="avaliacaoaoestrela">
+        <img src="img/estrela.png" class="avaliacaoaoestrela">
+        <img src="img/estrela (1).png" class="avaliacaoaoestrela">
+        <p style="color: #fcf3e4; margin-top: 10%; font-size: 120%;">Avaliada pelos nossos parceiros na plataforma!</p>
+        <p style="color: #fcf3e4; font-size: 120%; margin-top: 20%;">Condição: <p style="color: #fcf3e4; font-size: 120%;">Contratante de serviços</p>
+    </div>
+
+    <div style="margin-top: -10%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26" fill="none" class="localizacao1">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58829 25.5837C9.58857 25.5839 9.58879 25.584 10 25L9.58829 25.5837ZM10.4117 25.5837L10.4143 25.5819L10.4208 25.5773L10.4435 25.561C10.463 25.547 10.4911 25.5267 10.5271 25.5003C10.5991 25.4474 10.703 25.3699 10.8344 25.2689C11.0969 25.067 11.4694 24.771 11.9151 24.3899C12.8055 23.6286 13.9934 22.5234 15.1832 21.1471C17.5456 18.4142 20 14.5139 20 10.0549C20 7.38957 18.9474 4.8325 17.0726 2.9465C15.1975 1.06039 12.6535 0 10 0C7.3465 0 4.8025 1.06039 2.92743 2.9465C1.05257 4.8325 0 7.38957 0 10.0549C0 14.5139 2.45436 18.4142 4.81679 21.1471C6.00657 22.5234 7.1945 23.6286 8.08493 24.3899C8.53064 24.771 8.90307 25.067 9.16564 25.2689C9.297 25.3699 9.40093 25.4474 9.47293 25.5003C9.50893 25.5267 9.537 25.547 9.5565 25.561L9.57922 25.5773L9.58571 25.5819L9.58829 25.5837C9.83493 25.7574 10.1651 25.7574 10.4117 25.5837ZM10 25L10.4117 25.5837C10.4114 25.5839 10.4112 25.584 10 25ZM13.5714 10C13.5714 11.9724 11.9724 13.5714 10 13.5714C8.02757 13.5714 6.42857 11.9724 6.42857 10C6.42857 8.02757 8.02757 6.42857 10 6.42857C11.9724 6.42857 13.5714 8.02757 13.5714 10Z" fill="#333333"/>
+        </svg>
+        <div id="dados">
+        <p style="font-size: 200%; margin-top: -13%; margin-left: 10%;"><b>
+            Cibratel, II  - Itanhaém , SP
+        </b></p>
+        <span style="margin-left: 10%; font-size: 120%;">Membro desde de 12 de Setembro de 2022</span>
+        </div>
+    </div>
+
+    <h4 style="margin-left: 10%;">Histórico de postagens:</h4>
+    <div class="historico">
+        <div style="width: 100%; height: 40%; background-color: rgb(252, 243,); margin: 2% 0% 6% 2%;">
+            <p><b>Ultimas postagens:</b>
+            <p> Preciso de babá para os dias 01 e 02 de Dezembro de 2023
+            </p>
+        </div>
+        <div style="width: 100%; height: 40%; background-color: rgb(252, 243,); margin: 2% 0% 6% 2%;">
+
+                <p> Preciso de pintura em uma bicicleta 
+                </p>
+        </div>
+        <div style="width: 100%; height: 40%; background-color: rgb(252, 243,); margin: 2% 0% 6% 2%;">
+        
+                <p> Preciso de babá
+                </p>
+        </div>
+        <div style="width: 100%; height: 40%; background-color: rgb(252, 243,); margin: 2% 0% 6% 2%;">
+            
+                <p> Preciso de gesseiro para fazer sancas com LED
+                </p>
+        </div>
+        <div style="width: 100%; height: 40%; background-color: rgb(252, 243,); margin: 2% 0% 6% 2%;">
+            
+                <p> Preciso de decoradora para festa infantil
+                </p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="btn">Entrar em contato</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <p class="btn">Postar serviços</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <p class="btn">Procurar serviços</p>
+    </footer>
+</body>
+</html>

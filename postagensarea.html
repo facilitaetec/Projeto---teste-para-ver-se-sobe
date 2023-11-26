@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="img/koilogo.png" type="image/x-icon" class="">
+    <title>Serviços</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            padding: 0%;
+        }
+
+        nav {
+            background-color: #fcf4e4;
+            padding: 2%;
+            height: 1vh;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            display: none;
+        }
+
+        .dropdown-menu a{
+            display: block;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            background-color: #d74a05;
+        }
+
+        #btn {
+            text-decoration: none;
+            color: #fcf3e4;
+            font-weight: bold;
+            text-align: center  ;
+        }
+
+        #btn:hover  {
+            background: #fcf3e4;
+            color: #e04b00;
+            border-radius: 10px;
+            border-color: #d74a05 !important;
+
+
+        }
+
+        section {
+            background-color: #fcf3e4;
+            width: 1200 px;
+           
+        }
+
+        .cato {
+            width: 10%;
+            border-radius: 30px;
+
+        }
+        .navbar {
+            background: #d74a05;
+        }
+
+        #koilogonavbar{
+            width:10% ;
+            height: 45px;
+            float: left;
+            
+        }
+        #troca:hover {
+            color:#d74a05;
+            background: #fcf3e4;
+            
+            
+        }
+        #troca-container {
+        margin-left: auto;
+        
+        }
+            #ative:hover{
+                background: #d74a05 !important;
+                color: #fcf3e4 !important;
+                font-weight: bold;
+
+            }
+       
+        
+        footer {
+            background: #d74a05;
+            text-decoration: none !important;
+            color: #fcf4e4;
+            border-bottom: none !important;
+        }
+        footer p {
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 10px;
+            display: inline;
+            font-weight: bold;
+            color: #fcf3e4 !important;
+        }
+        footer p:hover {
+            background: #fcf3e4;
+            color: #d74a05 !important;           
+            border-radius: 5px;
+
+        }
+
+        @media(max-width: 720px) {
+            section {
+                width: 1000px;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+    <div class="nav-menu">
+        <a href="index.html">
+            <li id="btn-ini">Início</li>
+        </a>
+        <img src="img/koilogo.png" id="koilogonavbar" style="width: 5vw;margin-right: 6vw;">
+        <div id="troca-container">
+            
+                <button type="button" class="btn"><a href="perfil2.html"><b>Alterar perfil</b></a></button>
+            
+        </div>
+    </div>
+
+    </div>
+
+
+    <nav>
+
+       <ul>
+            <li>
+                <a href="">Categoria</a>
+            </li>
+            <li>
+                <a href="">Localização</a>
+            </li>
+            <li class="dropdown">
+                <a href="">Preços</a>
+                <div class="dropdown-menu">
+                    <a href="">Preço 1</a>
+                    <a href="">Preço 2</a>
+                    <a href="">Preço 3</a>
+                    <a href="">Preço 4</a>
+                </div>
+            </li>
+            <li>
+                <a href="">Organizar</a>
+            </li>
+       </ul>
+
+    </nav>
+
+
+
+    <div class="container-fluid">
+        <div class="abainforma">
+
+            <p class="statusservicos" style="color:#169981;"><b>Aberto</b></p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <p class="statusservicos">Lance</p>
+            <p class="titulo"><b>Procura-se por desentupidor...</b></p>
+
+            <div>
+
+                <img src="img/andrea.jpg" class="cato">
+
+                <a href="perfil.html">
+                    <p class="pessoa"><b>Postado por:</b> Andressa Amarão</p>
+                </a>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26" fill="none"
+                    class="localizacao">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.58829 25.5837C9.58857 25.5839 9.58879 25.584 10 25L9.58829 25.5837ZM10.4117 25.5837L10.4143 25.5819L10.4208 25.5773L10.4435 25.561C10.463 25.547 10.4911 25.5267 10.5271 25.5003C10.5991 25.4474 10.703 25.3699 10.8344 25.2689C11.0969 25.067 11.4694 24.771 11.9151 24.3899C12.8055 23.6286 13.9934 22.5234 15.1832 21.1471C17.5456 18.4142 20 14.5139 20 10.0549C20 7.38957 18.9474 4.8325 17.0726 2.9465C15.1975 1.06039 12.6535 0 10 0C7.3465 0 4.8025 1.06039 2.92743 2.9465C1.05257 4.8325 0 7.38957 0 10.0549C0 14.5139 2.45436 18.4142 4.81679 21.1471C6.00657 22.5234 7.1945 23.6286 8.08493 24.3899C8.53064 24.771 8.90307 25.067 9.16564 25.2689C9.297 25.3699 9.40093 25.4474 9.47293 25.5003C9.50893 25.5267 9.537 25.547 9.5565 25.561L9.57922 25.5773L9.58571 25.5819L9.58829 25.5837C9.83493 25.7574 10.1651 25.7574 10.4117 25.5837ZM10 25L10.4117 25.5837C10.4114 25.5839 10.4112 25.584 10 25ZM13.5714 10C13.5714 11.9724 11.9724 13.5714 10 13.5714C8.02757 13.5714 6.42857 11.9724 6.42857 10C6.42857 8.02757 8.02757 6.42857 10 6.42857C11.9724 6.42857 13.5714 8.02757 13.5714 10Z"
+                        fill="#333333" />
+                </svg>
+                <p style="margin-left: 7%;margin-bottom: -6%;margin-top: -3%;"><b>Itanhaém, SP</b></p>
+                <p style="margin-left: 7%;margin-bottom: -1%;margin-top: -3%;">Localização:</p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    class="calendario">
+                    <path
+                        d="M22.5 5H21.25V3.75C21.25 3.41848 21.1183 3.10054 20.8839 2.86612C20.6495 2.6317 20.3315 2.5 20 2.5C19.6685 2.5 19.3505 2.6317 19.1161 2.86612C18.8817 3.10054 18.75 3.41848 18.75 3.75V5H11.25V3.75C11.25 3.41848 11.1183 3.10054 10.8839 2.86612C10.6495 2.6317 10.3315 2.5 10 2.5C9.66848 2.5 9.35054 2.6317 9.11612 2.86612C8.8817 3.10054 8.75 3.41848 8.75 3.75V5H7.5C6.50544 5 5.55161 5.39509 4.84835 6.09835C4.14509 6.80161 3.75 7.75544 3.75 8.75V23.75C3.75 24.7446 4.14509 25.6984 4.84835 26.4017C5.55161 27.1049 6.50544 27.5 7.5 27.5H22.5C23.4946 27.5 24.4484 27.1049 25.1517 26.4017C25.8549 25.6984 26.25 24.7446 26.25 23.75V8.75C26.25 7.75544 25.8549 6.80161 25.1517 6.09835C24.4484 5.39509 23.4946 5 22.5 5ZM7.5 7.5H8.75V8.75C8.75 9.08152 8.8817 9.39946 9.11612 9.63388C9.35054 9.8683 9.66848 10 10 10C10.3315 10 10.6495 9.8683 10.8839 9.63388C11.1183 9.39946 11.25 9.08152 11.25 8.75V7.5H18.75V8.75C18.75 9.08152 18.8817 9.39946 19.1161 9.63388C19.3505 9.8683 19.6685 10 20 10C20.3315 10 20.6495 9.8683 20.8839 9.63388C21.1183 9.39946 21.25 9.08152 21.25 8.75V7.5H22.5C22.8315 7.5 23.1495 7.6317 23.3839 7.86612C23.6183 8.10054 23.75 8.41848 23.75 8.75V13.75H6.25V8.75C6.25 8.41848 6.3817 8.10054 6.61612 7.86612C6.85054 7.6317 7.16848 7.5 7.5 7.5ZM22.5 25H7.5C7.16848 25 6.85054 24.8683 6.61612 24.6339C6.3817 24.3995 6.25 24.0815 6.25 23.75V16.25H23.75V23.75C23.75 24.0815 23.6183 24.3995 23.3839 24.6339C23.1495 24.8683 22.8315 25 22.5 25Z"
+                        fill="#333333" />
+                    <path
+                        d="M10 21.25C10.6904 21.25 11.25 20.6904 11.25 20C11.25 19.3096 10.6904 18.75 10 18.75C9.30964 18.75 8.75 19.3096 8.75 20C8.75 20.6904 9.30964 21.25 10 21.25Z"
+                        fill="#333333" />
+                    <path
+                        d="M20 18.75H15C14.6685 18.75 14.3505 18.8817 14.1161 19.1161C13.8817 19.3505 13.75 19.6685 13.75 20C13.75 20.3315 13.8817 20.6495 14.1161 20.8839C14.3505 21.1183 14.6685 21.25 15 21.25H20C20.3315 21.25 20.6495 21.1183 20.8839 20.8839C21.1183 20.6495 21.25 20.3315 21.25 20C21.25 19.6685 21.1183 19.3505 20.8839 19.1161C20.6495 18.8817 20.3315 18.75 20 18.75Z"
+                        fill="#333333" />
+                </svg>
+                <p style="margin-left: 7%;margin-bottom: -18%;margin-top: 6%;"><b>Fecha 25/02/24 ás 12:30</b></p>
+                <p style="margin-left: 7%;margin-bottom: -8%;margin-top: 12%;">Prazo:</p>
+
+            
+
+                <div class="descricao">
+                    <p style="margin-left: 2%;padding: 2%; font-size:large;"><b>Detalhes:</b></p>
+                    <p style="text-align: justify;"> &nbsp; Preciso de um encanador para fazer a parte hidráulica de
+                        &nbsp; &nbsp;uma casa inteira. São dois banheiros, uma lavanderia, uma &nbsp; &nbsp;copa e a
+                        cozinha.<br>
+                        &nbsp; Início imediato.</p>
+                </div>
+
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14559.871533794212!2d-46.757523!3d-24.172859100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700603746282!5m2!1spt-BR!2sbr" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+
+        <div class="abaspequenas">
+            <div class="informacoes">
+                <p style="font-size: 118%;"><b>🚗 Serviço de Manutenção Automotiva! 🚗<br></b><br>
+                    ✅ Troca de óleo e filtro para prolongar a vida útil do motor.<br>
+                    ✅ Verificação e ajuste de freios para sua segurança.<br>
+                    ✅ Alinhamento e balanceamento de rodas para uma condução suave.<br>
+                    ✅ Diagnóstico de motor e eletrônica para garantir o desempenho ideal.<br>
+                    ✅ Inspeção completa para identificar problemas antes que se tornem caros.
+            </div>
+            <div class="informacoes">
+                <p style="font-size: 118%;"><b>🔧 Serviço de Manutenção Elétrica! 🔧<br></b><br>
+
+                    ✅ Instalação e reparo de sistemas elétricos residenciais para garantir seu conforto e segurança.<br>
+
+                    ✅ Diagnóstico e correção de falhas em circuitos elétricos para um ambiente livre de problemas.<br>
+
+                    ✅ Atualização e instalação de tomadas, interruptores e luminárias para uma casa moderna e
+                    eficiente.<br>
+
+                    ✅ Serviço de emergência 24 horas para lidar com problemas elétricos inesperados.<br>
+
+
+            </div>
+            <div class="informacoes">
+                <p style="font-size: 118%;"><b>🚿 Serviço de Manutenção Hidráulica! 🚿<br></b><br>
+
+                    ✅ Reparo rápido e eficiente de vazamentos para evitar danos à sua casa.<br>
+
+                    ✅ Desentupimento de canos e ralos, proporcionando um fluxo suave da água.<br>
+
+                    ✅ Instalação e manutenção de sistemas hidráulicos para garantir o funcionamento adequado.<br>
+
+                    ✅ Localização e reparo de problemas em tubulações para evitar danos estruturais.<br>
+            </div>
+            <div class="informacoes">
+                <p style="font-size: 118%;"><b>🏊‍♂️ Serviço de Limpeza de Piscinas! 🏊‍♀️<br></b><br>
+
+                    ✅ Limpeza completa da superfície da piscina para remoção de detritos e folhas.<br>
+
+                    ✅ Aspiração do fundo da piscina para eliminar sujeira e resíduos.<br>
+
+                    ✅ Limpeza e manutenção dos skimmers e cestas de filtragem.<br>
+
+                    ✅ Testes regulares da qualidade da água e ajustes químicos necessários.<br>
+
+                    ✅ Escovação das paredes e linha d'água para prevenir o acúmulo de algas e depósitos.<br>
+
+
+            </div>
+            <div class="informacoes">
+                <p style="font-size: 118%;"><b>👷 Serviço de Construção e Reforma!👷<br></b><br>
+
+                    ✅ Construção e reparo de estruturas residenciais e comerciais com alta qualidade.<br>
+
+                    ✅ Instalação de revestimentos, como pisos e azulejos, para um ambiente esteticamente agradável.<br>
+
+                    ✅ Reforma de banheiros, cozinhas e áreas externas para atender às suas necessidades.<br>
+
+                    ✅ Construção de paredes, lajes e fundações com materiais duráveis e resistentes.<br>
+
+                    ✅ Serviço de alvenaria para criação de ambientes personalizados e funcionais.<br>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer class="finalcinza" id="rodapécinza">
+    <diV class="container-fluid" id="containerfinal">
+    </diV>
+
+    <a href="contato.html"><p > Fale conosco</p></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="postar.html"><p > Postar serviços</p></a>
+    
+</footer>
+
+
+</body>
+
+</html>
