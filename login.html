@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar</title>
+        <style>
+            * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcf3e4;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+.input-container+.input-container {
+            margin-top: 36px;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container input {
+            width: 100%;
+            height: 40px;
+            padding: 6px;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #69578D;
+        }
+
+        .input-container label {
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: text;
+
+            transition: 0.4s;
+        }
+
+        .input-container input:focus~label,
+        .input-container input:not(:placeholder-shown)~label {
+            top: -10px;
+            color: #d74a05;
+        }
+
+        input[type="password"] {
+            padding-right: 38px;
+        }
+
+        .password-visibility {
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            cursor: pointer;
+        }
+
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d74a05;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf3e4;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: 2px solid #d74a05 !important;
+    background-color: #fcf3e4;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+.login-button button:hover {
+    background-color: #d74a05;
+    color: #fcf3e4;
+}
+
+.login-button button:hover a{
+    background-color: #d74a05;
+    color: #fcf3e4;
+    font-weight: bold;
+}
+           
+        
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;        
+    background: #fcf3e4;
+    color: #d74a05;
+    font-weight: bold;
+    
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #d74a05;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.oauth-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .oauth-container button {
+            background-color: #fcf3e4;
+            font-weight: bold;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            border: 0;
+            transition: background-color 0.2s;
+        }
+
+        .oauth-container button:hover {
+              color: #d74a05;
+              border: 2px solid #d74a05;
+        }
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+button[type="submit"] {
+            margin-top: 24px;
+            width: 100%;
+            height: 48px;
+            border: 0;
+            border-radius: 8px;
+            background-color: #d74a05;
+            color: #fcf3e4;
+
+            font-weight: bold;
+            font-size: 16px;
+
+            transition: filter 0.2s;
+        }
+
+        button[type=submit]:hover {
+            border: 2px solid #d74a05;
+            background: #fcf3e4;
+            color: #d74a05;
+        }
+        button img{
+            width: 20px;
+        }
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #190600;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #fcf3e4;
+    
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #d74a05;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #190600;
+}
+
+.input-box input::placeholder {
+    color: #190600;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #190600;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #d74a05;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover  {
+    background-color: #fcf3e4;
+    border: 2px solid #d74a05 ;
+    color: #d74a05 !important;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fcf3e4;
+    font-weight: bold;
+}
+.continue-button button:hover a{
+    color: #d74a05;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+.have-account{
+color:#190600;
+}
+.have-account:hover{
+    color: #d74a05;
+    font-weight: bold;
+}
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/koilogo.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <form>
+                    <div class="input-container">
+                        <input type="email" id="user-email" required placeholder=" " />
+                        <label for="user-email">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="user-password" required placeholder=" " />
+                        <label for="user-password">Senha</label>
+                        <span class="material-icons password-visibility">Mostrar</span>
+                    </div>
+                   <a href="perfil.html"><button type="submit" id="entrar">Entrar</button></a>
+                </form><br><br>
+            
+                <a href="" class="have-account">Esqueceu sua senha?</a>
+                <a href="cadastro.html" class="have-account">Ainda não tem cadastro?</a><br>
+            
+                <hr>
+            
+                <div class="oauth-container">
+                    <button>
+                        <img src="img/google.png" alt="Google icon" id="icon">
+                        Continuar com o Google
+                    </button>
+                    <button>
+                        <img src="img/icon.png" alt="LinkedIn icon" id="icon">
+                        Continuar com o LinkedIn
+                    </button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
