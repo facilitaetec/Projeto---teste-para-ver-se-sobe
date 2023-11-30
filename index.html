@@ -90,8 +90,7 @@
             font-weight: bold;
             text-align: center;
             font-size: larger;
-            
-    text-shadow: 3px 3px 5px #190600;
+            text-shadow: 3px 3px 5px #190600;
 
 
         }
@@ -163,25 +162,46 @@
         #resumo {
             text-align: justify;
         }
+        .botao {
+            background-color: #d74a05;
+            color: #fcf3e4;
+            border: none;
+            margin-left: 2%;
+            margin-right: 2%;
+            display: inline-flex;
+            
+            
+        }
+        .botao :hover{
+            background-color: white;
+            color: #d74a05;
+            border-radius: 10px;
+        }
+        .botao a{
+            color: #fcf3e4;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="navbar">
-        <div class="nav-menu">
-            
-            <img src="img/koilogo.png" id="koilogonavbar">
-            <a href="postagensarea.html"><button type="button" id="btn4" class="btn btn-postar">Serviços</button></a>
-            <a href="sobre.html"><button type="button" id="btn3" class="btn">Sobre</button></a>
-            <a href="cadastro.html"><button type="button" id="btn2" class="btn">Cadastrar</button></a>
-            <a href="login.html"><button type="button" id="btn1" class="btn">Entrar</button></a>
-        </div><br>
-
+    
+<header>
+    <div class="navbar" style="gap: 10px;">
+        <img src="img/koilogo.png" style="width: 6%;margin-left: 10%;">
+        <div style="width: 50%; display: inline-flex;gap: 10%;">
+            <button class="botao"><a href="sobre.html"><b>Sobre</b></a></button>
+            <button class="botao"><a href="cadastro.html"><b>Cadastrar</a></b></button>
+            <button class="botao"><a href="login.html"><b>Entrar</b></a></button>
+        </div>
         
-    </div><br>
+    </div>
 
-    <section>
+</header>
+
+
+    <section style="margin-top: 4%;">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -217,13 +237,13 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="visually-hidden">Previous
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="visually-hidden">Next
             </button><br>
 
             <!-- Botões abaixo do carrossel -->
@@ -235,18 +255,8 @@
     </section>
 
     <footer class="finalcinza" id="rodapécinza">
-        <div class="container-fluid" id="containerfinal">
-            <p id="sobrenostitulo"><b>Sobre nós</b></p>
-            <p id="resumo">Somos uma plataforma de serviços online, atuando como intermediadores entre clientes e profissionais, ou seja, conectando quem precisa de algo com quem sabe fazer.
-
-                <p><h5><b>Koi para os clientes:</b></h5></p>
-                
-                Pelo nosso web app você descreve o serviço que precisa os profissionais se candidatam.
-                
-                <p><h5><b>Koi para profissionais:</b></h5></p>
-                
-                <p style="width: 50vw;margin-left: 23vw;">Pela plataforma, você encontra oportunidades na sua área de atuação e escolhe os que desejar se canditar. Ao liberar a oportunidade você negocia com cliente e estabelece seus próprios preços.</p>
-        </div>
+        
+          
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

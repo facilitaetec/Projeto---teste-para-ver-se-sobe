@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <link rel="icon" href="img/koilogo.png" type="image/x-icon">
-    <title>Serviços</title>
+    <title>Poste um serviço!</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,7 +17,7 @@
             font-family:  sans-serif;
         }
         body{
-            background-color: white;
+            background-color: #FCF3E4;
         }
 
         #bemvindo {
@@ -169,10 +169,10 @@
         <a href="index.html">
             <span id="bemvindo">Início</span>
         </a>
-        <img src="img/koilogo.png" id="koilogonavbar" alt="Logo">
+        <img src="img/koilogo.png" id="koilogonavbar" alt="Logo" style="width: 6%;">
         <div id="troca-container">
             <a href="perfil2.html">
-                <button type="button" id="troca" class="btn"><b>Alterar perfil --> </b></button>
+                <button type="button" id="troca" class="btn"><b>Alterar perfil</b></button>
             </a>
         </div><!-- ... Seu cabeçalho aqui ... -->
     </div>
@@ -181,21 +181,21 @@
         <div class="custom-card">
             <div class="input-group">
                 <label for="titulo"><b>Tipo de serviço:</b></label>
-                <input type="text" id="orcamento" placeholder="Ex: pintor, babá...">
+                <input type="text" id="servico" placeholder="Ex: pintor, babá..." style="background-color: #FCF3E4;">
             </div>
 
             <div class="textarea-group">
                 <label for="descricao"><b>Descreva sua tarefa:</b></label>
-                <textarea id="descricao" rows="5" placeholder="Descreva sua tarefa"></textarea>
+                <textarea id="descricao" rows="5" placeholder="Descreva sua tarefa" style="background-color: #FCF3E4;"></textarea>
             </div>
 
             <div class="input-group">
-                <label for="orcamento"><b>Data para iniciar o serviço:</b></label>
-                <input type="date" id="orcamento" placeholder="Digite o orçamento">
+                <label for="inicio"><b>Data para iniciar o serviço:</b></label>
+                <input type="date" id="inicio" placeholder="Digite o orçamento" style="background-color: #FCF3E4;">
             </div>
             <div class="input-group">
-                <label for="orcamento"><b>Prazo para finalizar  o serviço:</b> se houver*</label>
-                <input type="date" id="orcamento" placeholder="Digite o orçamento">
+                <label for="prazo"><b>Prazo para finalizar  o serviço:</b> se houver*</label>
+                <input type="date" id="prazo" placeholder="Digite o orçamento" style="background-color: #FCF3E4;">
             </div>
 
             <button class="btn-postar"><b>Postar</b></button>
